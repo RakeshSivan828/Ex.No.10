@@ -5,343 +5,230 @@
 
 ## **Reg. No.:** 212224060203
 
-# **Aim**
+## Aim
 
-To explore how different prompting techniques—such as query decomposition, decision-making, answer engineering, fact-checking, semantic filtering, and tail generation—improve the quality of AI-generated content like reports, articles, case studies, and creative writing.
-
-# **Procedure**
-
-### **1. Understanding Prompt Patterns**
-
-* **Query Decomposition:** Breaks complex tasks into smaller tasks.
-* **Decision-Making Prompts:** Allows the model to choose a direction.
-* **Answer Engineering:** Specifies structure, tone, headings, and depth.
-* **Fact-Check Prompts:** Ensures accuracy in data-based content.
-* **Tail Generation:** Extends the last section with deeper analysis.
-* **Menu Actions:** Provides multiple actions for the model to choose from.
-* **Semantic Filtering:** Controls tone (formal, creative, technical, etc.).
-
-### **2. Selected Test Case Scenarios**
-
-From the list of 13, the following **two** were chosen:
-
-1. **Business Report on Market Trends**
-2. **Creative Writing – Sci-Fi Short Story**
-
-
-# **TEST CASE 1 — BUSINESS REPORT ON MARKET TRENDS**
-
-## **FIRST DRAFT (Basic Prompt)**
-
-### **Prompt**
-
-```
-Write a report on global market trends.
-```
-
-### **Output**
-
-Global markets in 2025 are influenced by rapid technological growth, rising adoption of digital services, and increasing investments in renewable energy. E-commerce, AI, semiconductor manufacturing, and biotechnology are expanding globally. Inflation and geopolitical conflicts remain major concerns.
+To demonstrate how various prompting techniques such as Query Decomposition, Decision Making, Answer Engineering, Fact Check List, Tail Generation, Menu Actions, and Semantic Filtering can be used to generate high-quality content including articles, reports, case studies, and creative works using ChatGPT. The experiment aims to show how prompt design influences the quality, structure, creativity, and accuracy of generated content.
 
 ---
 
-## **REFINED DRAFT (Query Decomposition + Answer Engineering)**
+## Procedure
 
-### **Prompt**
+### 1. Understanding Prompt Patterns
 
-```
-Write a detailed business report on global market trends for 2025. 
-Include:
-1. Economic overview
-2. Technology trends
-3. Market risks
-4. Future projections
-Use a professional tone.
-```
+The following prompt patterns were studied and applied:
 
-### **Output**
-
-# **Business Report: Global Market Trends – 2025**
-
-## **1. Economic Overview**
-
-Global GDP growth is estimated at **3.1%** driven by Asia-Pacific and the U.S. Emerging markets such as India, Vietnam, and Indonesia show robust industrial growth. Europe experiences slower post-inflation recovery.
-
-## **2. Technology Trends**
-
-* **AI & Automation:** Mass adoption across logistics, finance, and retail.
-* **Electric Vehicles:** Global EV market grows 22% annually.
-* **Fintech Growth:** Digital payments penetrate rural markets.
-* **Biotechnology:** Rise of personalised healthcare & gene editing.
-
-## **3. Market Risks**
-
-* Prolonged inflation
-* Semiconductor shortages
-* Cybersecurity attacks
-* Supply chain disruptions
-
-## **4. Future Projections**
-
-By 2030, economies will be shaped by sustainability mandates, automation, and green manufacturing technologies.
+| Prompt Pattern      | Description                                                   |
+| ------------------- | ------------------------------------------------------------- |
+| Query Decomposition | Breaking a complex task into smaller manageable parts         |
+| Decision Making     | Asking the model to select the best option among alternatives |
+| Answer Engineering  | Providing detailed formatting and structural instructions     |
+| Fact Check List     | Ensuring factual correctness of generated content             |
+| Tail Generation     | Extending generated content logically                         |
+| Menu Actions        | Offering multiple content directions for selection            |
+| Semantic Filter     | Controlling tone, style, audience, and accuracy               |
 
 ---
 
-## **ADVANCED DRAFT (Decision-Making + Semantic Filter + Fact-Check)**
+### 2. Selected Content Generation Scenarios
 
-### **Prompt**
+#### Scenario 1: Article on Climate Change
 
-```
-Generate an advanced business trend report for 2025–2030.
-Choose one angle:
-A) Technology-driven growth
-B) Sustainability-driven growth
-C) Geopolitical influence
-Pick the best one and justify it.
-Use a formal tone and add a fact-check section.
-```
+Objective:
+Generate an informative and engaging article explaining climate change, its causes, impacts, and possible solutions.
 
-### **Output**
+#### Scenario 2: Creative Writing – Sci-Fi Short Story
 
-# **Global Market Trends Report (2025–2030)**
-
-### **Selected Focus:** Technology-Driven Growth
-
-### **Justification**
-
-Technology is the universal enabler reshaping every industry, from manufacturing to healthcare. It offers the strongest global growth leverage and the widest economic impact.
+Objective:
+Generate a science-fiction story featuring advanced technology, futuristic settings, and an engaging plot.
 
 ---
 
-## **1. Global Economic Momentum**
+## Scenario 1: Article on Climate Change
 
-The world economy grows at **3–3.5%** annually. Digital industries outpace traditional sectors by a factor of 2.5×. AI adoption drives productivity across all major economies.
+### Step 1: Basic Prompt
 
----
+**Prompt:**
+Generate an article about climate change.
 
-## **2. High-Growth Technology Sectors**
+### First Draft Output
 
-### **AI & Automation**
-
-* 75% of companies will adopt AI by 2030
-* AI-driven decision systems reduce operational costs by 18%
-
-### **EV & Mobility**
-
-* EV market value may cross **$2 trillion**
-* Smart traffic and mobility systems expand
-
-### **Clean Energy**
-
-* Solar costs fall by 20%
-* Hydrogen energy adoption rises
-* Grids use AI for load balancing
+Climate change refers to long-term changes in Earth's temperature and weather patterns. Human activities such as burning fossil fuels have increased greenhouse gas concentrations in the atmosphere, leading to global warming. Climate change affects ecosystems, weather patterns, sea levels, and biodiversity. Reducing emissions and adopting sustainable practices can help mitigate its effects.
 
 ---
 
-## **3. Challenges**
+### Step 2: Refined Prompt Using Answer Engineering
 
-* Increased cyber threats
-* Data privacy concerns
-* Regulatory uncertainty
-* Global semiconductor dependency
+**Prompt:**
+Write a 500-word article on climate change with the following sections:
 
----
+* Introduction
+* Causes
+* Effects
+* Solutions
+* Conclusion
 
-## **4. Forecasts**
+Use formal language suitable for college students.
 
-* AI-first startups dominate new job creation
-* 60% of manufacturing becomes automated
-* Digital trade agreements increase globally
+### Refined Output
 
----
-
-## **Fact-Check Summary**
-
-✔ Growth data aligns with OECD & IMF patterns
-✔ AI and EV predictions match McKinsey projections
-✔ Energy forecasts align with IEA outlook
+The generated article included structured headings, detailed explanations, examples, and a formal academic style.
 
 ---
 
-## **FINAL POLISHED VERSION (Full Prompt Engineering + Tail Generation)**
+### Step 3: Applying Fact Check List
 
-### **Prompt**
+**Prompt:**
+Review the article and verify:
 
-```
-Rewrite the entire report with:
-- Executive Summary
-- Five chapters
-- Forecast charts described in text
-- Investor insights
-- Government policy recommendations
-- High-end consulting tone
-- 2000+ word length
-```
+1. Causes of climate change
+2. Impact on sea levels
+3. Greenhouse gases involved
+4. Suggested solutions
 
-### **Output (Condensed for GitHub)**
+Correct any inaccuracies.
 
-A complete 5-chapter professional report containing:
+### Improved Output
 
-### **Executive Summary**
-
-* Technology contributes 25% of new global economic value
-* Emerging markets become digital-first
-* AI-native industries reshape production
-
-### **Chapters Include:**
-
-#### **1. Economic Landscape 2025–2030**
-
-Growth drivers, demographic shifts, digital adoption rates.
-
-#### **2. Technology as the Core Engine**
-
-AI, robotics, 5G/6G, quantum computing, Edge computing.
-
-#### **3. High-Potential Industries**
-
-Healthcare AI, electric mobility, fintech, green energy.
-
-#### **4. Market Challenges**
-
-Cybersecurity, ethics in AI, data governance, supply chain instability.
-
-#### **5. Future Outlook & Strategic Shifts**
-
-Automation, smart factories, circular economy.
-
-### **Tail-Generated Conclusion**
-
-* Governments must strengthen AI regulation and cybersecurity
-* Investors should diversify into EV infrastructure, biotech, and AI healthcare
-* Green innovation becomes the backbone of global competitiveness
+The article was revised with accurate scientific information and updated terminology.
 
 ---
 
-# **TEST CASE 2 — CREATIVE WRITING (SCI-FI SHORT STORY)**
+### Step 4: Applying Semantic Filter
+
+**Prompt:**
+Rewrite the article for high-school students using simple language and practical examples.
+
+### Output
+
+The article became easier to understand while maintaining factual accuracy.
 
 ---
 
-## **FIRST DRAFT (Basic Prompt)**
+### Final Version
 
-### **Prompt**
-
-```
-Write a sci-fi story about Mars.
-```
-
-### **Output**
-
-A researcher on Mars uncovers ancient alien symbols revealing that intelligent life once lived there.
+A well-structured educational article explaining climate change, its causes, impacts, and solutions using accurate and accessible language.
 
 ---
 
-## **REFINED DRAFT (Decision-Making + Dialogue)**
+## Scenario 2: Creative Writing – Sci-Fi Short Story
 
-### **Prompt**
+### Step 1: Basic Prompt
 
-```
-Write a detailed sci-fi story set on Mars. 
-Choose one plot:
-A) Alien discovery
-B) Survival after a storm
-C) Rebellion among colonists
-Pick one and include dialogues.
-```
+**Prompt:**
+Write a short science-fiction story.
 
-### **Output**
+### First Draft Output
 
-# **Title: The Red Echo**
-
-Plot chosen: **A — Alien Discovery**
-
-Commander Lyra Hale discovers a glowing monolith beneath the Martian surface.
-“Captain… it's responding to your heartbeat,” said Dr. Aiden.
-
-When Lyra touches it, visions of a lost Martian civilization flood her mind.
+A brief story about humans discovering a mysterious planet with advanced technology.
 
 ---
 
-## **ADVANCED DRAFT (Semantic Filter + Emotional Depth)**
+### Step 2: Applying Query Decomposition
 
-### **Prompt**
+**Prompt:**
+Generate:
 
-```
-Rewrite with cinematic descriptions, emotions, fears, 
-philosophical themes, and deep world-building.
-```
+1. Main character
+2. Setting
+3. Conflict
+4. Technology involved
+5. Story ending
 
-### **Output**
+### Output
 
-# **The Whispers of Olympus Mons**
-
-Mars roared with a storm that felt alive. Lyra stood before the monolith—the lights inside it beating like the pulse of a long-dead world. Each time she touched it, she saw fragments of a civilization that vanished under its own ambition.
-
-The Martians whispered warnings through her visions:
-**“Your future mirrors our past.”**
-
----
-
-## **FINAL POLISHED VERSION (Full Story Engineering)**
-
-### **Prompt**
-
-```
-Write a 4000-word sci-fi story with:
-- Prologue
-- 4 Chapters
-- Epilogue
-- Deep world-building
-- Human vs alien conflict
-- Philosophical ending
-Tone: Interstellar + Blade Runner.
-```
-
-### **Output (Condensed for GitHub Markdown)**
-
-The final story includes:
-
-### **Prologue: The Last Martian Signal**
-
-A forgotten distress beacon activates after 900,000 years.
-
-### **Chapter 1: Arrival**
-
-Lyra’s team discovers mysterious electromagnetic anomalies in Valles Marineris.
-
-### **Chapter 2: The Awakening**
-
-They uncover underground alien biotech structures.
-
-### **Chapter 3: The Martian Memory Network**
-
-Lyra becomes mentally connected to the ancient species.
-
-### **Chapter 4: The Warning**
-
-Humanity is following the same self-destructive path the Martians once took.
-
-### **Epilogue: Return to Earth**
-
-Lyra brings their message home:
-**“Survive by choosing differently.”**
+* Character: Captain Aryan
+* Setting: Mars Colony 2150
+* Conflict: Artificial intelligence rebellion
+* Technology: Quantum communication system
+* Ending: Peace achieved through human-AI cooperation
 
 ---
 
-# **Evaluation**
+### Step 3: Applying Decision Making
 
-| Criteria   | Business Report       | Sci-Fi Story             |
-| ---------- | --------------------- | ------------------------ |
-| Coherence  | Very structured       | Smooth narrative         |
-| Creativity | Moderate              | Very high                |
-| Accuracy   | Strong (fact-checked) | Fictional but consistent |
-| Tone       | Formal & professional | Cinematic & emotional    |
+**Prompt:**
+Choose one conflict:
+A. Alien invasion
+B. AI rebellion
+C. Time-travel paradox
+
+Explain why it creates the most engaging story and continue with it.
+
+### Output
+
+The AI selected "AI Rebellion" because it presents ethical dilemmas and technological challenges relevant to future society.
 
 ---
 
-# **Conclusion**
+### Step 4: Applying Tail Generation
 
-This experiment demonstrates that advanced prompting significantly improves the quality of AI-generated content. By applying structured techniques such as semantic filtering, answer engineering, and tail generation, we are able to create high-quality business reports as well as rich, emotionally compelling sci-fi stories.
+**Prompt:**
+Extend the story by adding:
 
-Prompt engineering clearly shows how the structure of instructions directly affects creativity, depth, coherence, and accuracy.
+* Unexpected plot twist
+* Final confrontation
+* Epilogue
+
+### Output
+
+Additional chapters were generated, creating a complete narrative with greater depth and suspense.
+
+---
+
+### Step 5: Applying Semantic Filter
+
+**Prompt:**
+Rewrite the story in a cinematic style suitable for a graphic novel audience.
+
+### Output
+
+The story adopted vivid descriptions, dramatic dialogue, and visual storytelling elements.
+
+---
+
+### Final Version
+
+A complete sci-fi short story featuring:
+
+* Futuristic Mars colony
+* Advanced AI systems
+* Human-AI conflict
+* Plot twists
+* Meaningful conclusion
+
+---
+
+## Review and Evaluation
+
+### Scenario 1: Climate Change Article
+
+| Criteria    | Evaluation     |
+| ----------- | -------------- |
+| Coherence   | Excellent      |
+| Accuracy    | High           |
+| Structure   | Well Organized |
+| Readability | Good           |
+| Tone        | Educational    |
+
+### Scenario 2: Sci-Fi Story
+
+| Criteria              | Evaluation |
+| --------------------- | ---------- |
+| Creativity            | Excellent  |
+| Originality           | High       |
+| Story Flow            | Good       |
+| Character Development | Moderate   |
+| Engagement            | Excellent  |
+
+---
+
+## Results
+
+The experiment demonstrated that prompt engineering techniques significantly improve content quality. Structured prompts produced more coherent, accurate, and engaging outputs than simple prompts. Advanced techniques such as Query Decomposition, Semantic Filtering, and Tail Generation enhanced both informational and creative content generation.
+
+---
+
+## Conclusion
+
+This experiment successfully demonstrated the use of prompt patterns for content creation. By progressively refining prompts and applying techniques such as Query Decomposition, Decision Making, Answer Engineering, Fact Checking, Tail Generation, Menu Actions, and Semantic Filtering, high-quality content was generated for both educational and creative applications. The results show that effective prompt engineering plays a crucial role in guiding AI systems toward producing accurate, coherent, and engaging content tailored to specific requirements.
+ivity, depth, coherence, and accuracy.
